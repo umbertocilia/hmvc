@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>EUM</title>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="wrapper">
+ 
+  
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand"> <a href="#"> EUM </a> </li>
+      <li class="main-menu" > <a href="#introduction"><i class="fa fa-file-pdf-o"></i> Introduction</a> </li>
+      <li class="main-menu"> <a href="#requirements"><i class="fa fa-server" aria-hidden="true"></i> Server Requirements</a> </li>
+
+      <li class="main-menu"> <a href="#installation"><i class="fa fa-cogs" aria-hidden="true"></i> Installation</a> </li>
+ 
+      <li class="dropdown" id="myDropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> How to use <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          
+          <li ><a href="#useRegistrtion"><i class="fa fa-circle-o" aria-hidden="true"></i> Registration form</a></li>
+          <li><a href="#useLogin"><i class="fa fa-circle-o" aria-hidden="true"></i> Login form</a></li>
+          <li><a href="#useDashboard"><i class="fa fa-circle-o" aria-hidden="true"></i> Dashboard</a></li>
+          <li><a href="#useProfile"><i class="fa fa-circle-o" aria-hidden="true"></i> Profile</a></li>
+          <li><a href="#useUser"><i class="fa fa-circle-o" aria-hidden="true"></i> User Management</a></li>
+          <li><a href="#useTrash"><i class="fa fa-circle-o" aria-hidden="true"></i> Trash</a></li> 
+          <li><a href="#useConfiguration"><i class="fa fa-circle-o" aria-hidden="true"></i> App configuration</a></li>
+          <li><a href="#useReports"><i class="fa fa-circle-o" aria-hidden="true"></i> Reports</a></li>
+        </ul>
+      </li>
+      <li class="main-menu"> <a href="#social_authentication"><i class="fa fa-sign-in" aria-hidden="true"></i> Social Authentication</a> </li>
+      <li class="main-menu"> <a href="#application_structure"><i class="fa fa-sitemap" aria-hidden="true"></i> Application Structure</a> </li>
+      <li class="main-menu"> <a href="#Customisation"><i class="fa fa-cog" aria-hidden="true"></i> Customisation</a> </li>
+	        <li class="main-menu"> <a href="#security"><i class="fa fa-lock" aria-hidden="true"></i> Security</a> </li>
+      <li class="main-menu"> <a href="#credits"><i class="fa fa-book" aria-hidden="true"></i> Credits</a> </li>
+    
+    </ul>
+  </nav>
+  <!-- /#sidebar-wrapper --> 
+  
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 ">
+          <h1 class="page-header" id="introduction">EUM - User Management System</h1>
+		  <p>
+		  EUM is a PHP application built up around the CodeIgniter framework(version 3.1.0), that allowing the registration and administration of users.It can be used as a base platform for any CodeIgniter based web applications. Its provide secure login, authentication, authorization and complete user management.
+		  <p>
+		  If you already have an existing PHP application, and you want to add user login, registration and user role management features,then you need to move your application to CodeIgniter framework and incorporate it inside EUM application.EUM is HMVC based.So you can easily do this.</p>
+		  </p>
+		  <hr>
+          <div class="jquery-script-ads" style="margin:30px auto;">
+</div>
+      <strong> <p> By: EUM</p>
+<p>Email: ergo7care@gmail.com</p></strong>
+<p>Thank you for purchasing our software. If you have any questions that are beyond the scope of this help file please feel free to contact us at ergo. Thank you so much for purchasing one of our products!</p>
+ 
+    
+ 
+   
+   <h2 id="features" >Features</h2>
+   <ul>
+   <li>Built with CodeIgniter 3.1</li>
+   <li>HMVC architecture </li>
+   <li>Secure user registration and login</li>
+   <li>Password reset</li>
+   <li>Secure password algorithm using Bcrypt</li>
+   <li>Avatar and logo upload with crop feature</li>
+   <li>Remember Me feature on login</li>
+   <li>Login with email or username</li>
+   <li>CAPTCHA on registration</li>
+   <li>E-Mail Verification for new users</li>
+   <li>Interactive Dashboard</li>
+   <li>Powerful admin panel</li>
+   <li>Manage permissions  </li>
+   <li>Assign permission to users</li>
+   <li>Easy installation using installation wizard</li>
+   <li>Built using  AdminLTE </li>
+   <li>Client side and server side form validation</li>
+   <li>Fully object oriented </li>
+  </ul>
+   
+   <h2 id="requirements" >Server Requirements</h2>
+   <ul>
+   <li>PHP version 5.4 or newer is recommended.</li>
+   <li>MySQL (5.1+) via the mysqli </li>
+   </ul>
+   
+
+   
+
+   
+   <h2 id="installation">Installation</h2>
+    Just make the <code>application/config/database.php</code> file writable by setting them 777 permissions, and you are good to go.
+  <p> Please follow the steps </p>
+<ol>
+<li>Download the file which you have purchased</li>
+<li>Upload Zip File in your server</li>
+<li>Extract the Zip file that you uploaded</li>
+<li>Now Go to your Browser and Check http://www.yourdomain.com/install</li>
+<li>Give your Database Host Name (Ex: localhost), Database User Name, Password ( That’s given by your Domain & Hosting Provider), Database Name & click Install button.</li>
+ </ol>
+
+  For manual installation 
+ <ol>
+<li> Unzip and upload files to web server </li>
+<li> Create/locate a new mysql database to install </li>
+<li>  Execute the sql file located in install/assets/install.sql to create the tables needed</li>
+<li>  open the application/config/database.php file with a text editor and set your database setting</li>
+</ol>
+<br>
+<br>
+ <p>
+A default user will be created for you with following credentials:<br>
+username: <strong>admin</strong><br>
+ password:  <strong>admin123</strong>
+ <br> You should now change the permissions of <code>application/config/database.php</code> file to 755 and make it writable only by root system user. This is for security reasons.Don't forget to change default user's credentials after login.</p>
+ <br>
+<h5>Captcha setting </h5>
+You should set permission 777 for captcha folder in root directory
+<br>
+<br>
+<img alt="registration form" class="demo_image" src="images/install.png"  >
+ <br>
+<h5>Mail configuration </h5>
+ Just open your <code>application/config/email.php</code> file and define your mail settings:
+ <br>
+ <br>
+ <code>
+    $config['protocol'] = 'smtp'; <br>
+	$config['smtp_host'] = 'smtp_host'; <br>
+	$config['smtp_port'] = smtp_port;  <br>
+	$config['smtp_user'] = 'smtp_user'; <br>
+	$config['smtp_pass'] = 'smtp_password'; <br>
+	$config['mailtype'] = 'mailtype'; <br>
+	$config['charset'] = 'charset' <br>
+	</code>;
+<h2 id="howtouse">How to use</h2>
+<ol class="content_list">
+<li ><h4 id="useRegistrtion">Registration form</h4></li>
+
+After complete instillation goto  http://yourdomain.com/ , you will get login up from.Then navigate to signup  fill up all information (first name, last name, email address, password etc.).After form submit check your email address and click activation link.
+ <br>
+ <br>
+<img class="demo_image" alt="registration form" src="images/reg-form.png"  >
+<li> <h4 id="useLogin">  Login form </h4></li>
+Enter your email and password and click log In button. Now you can see the dashboard.
+ <br>
+ <br>
+<img alt="registration form" src="images/login-form.png" class="demo_image">
+<li> <h4 id="useDashboard"> Dashboard </h4></li>
+In your dashboard you can see all information in simple way.
+ <br>
+  <br>
+<img alt="registration form" src="images/dashboard.png" class="demo_image">
+<li> <h4 id="useProfile">Profile</h4></li>
+ Here you can edit your profile details
+ <br>
+ <br>
+ <img alt="registration form" src="images/profiles.png" class="demo_image">
+ 
+<li> <h4 id="useUser">User Management(search,delete,activate/deactivate,permission)</h4></li>
+ 
+  <h5>Add User</h5>
+  To add a new user, click on the "Add" button on the right. A new pop-up window will open.
+Fill the fields and submit the form.You should fill all required fields.
+<h5>Edit User</h5>
+For edit each user click the edit button on the right of the row.You can also set different user permissions in here.
+<h5>Delete User</h5>
+For delete user you have to select the user from the list and then click on the "Delete" button on the top of the table.
+<h5>Search User</h5>
+User table contain a search field at the top of the table.You can search a user with username/email or phone.
+<h5>Edit Avatar</h5>
+Every user is able to set his profile avatar from their profile page or by click the image icon in user list . 
+ <br>
+ <br>
+<img alt="registration form" src="images/users.png" class="demo_image">
+
+<li> <h4 id="useTrash">Trash</h4></li>
+You can undo deleted users from trash
+ <br>
+ <br>
+ <img alt="registration form" class="demo_image" src="images/trash.png" class="demo_image">
+<li> <h4 id="useConfiguration">App configuration</h4></li>
+To edit you app details go to "app config" module, You can enable/disable mail confirmation on registration in here.You can also change you app logo here.Page length option provided in the config page helps to set the records per page in datatables like user list,trash,reports etc.
+ <br>
+ <br>
+ <img alt="registration form" class="demo_image" src="images/appconfig.png" class="demo_image">
+<li> <h4 id="useReports">Reports</h4></li>
+Select the type of report and submit the form.
+ <br>
+ <br>
+  <img alt="registration form" class="demo_image" src="images/report.png" class="demo_image">
+  
+ 
+ 
+
+  
+     <h2 id="social_authentication">Social Authentication</h2>
+	 <p>
+	 If you want to allow social authentication for your users,then you can enable this in appconfig settings. EUM supports Facebook, Twitter and Google+ by default.
+	 </p>
+	 	 <img alt="registration form" class="demo_image" src="images/social.png" class="demo_image">
+		 <br>
+		 <br>
+	 <h4>Facebook</h4>
+	 <p>
+	 Register a new application at Facebook <a href="https://developers.facebook.com/apps/" target="_blank"> App Creation</a> .
+	 Please refer <a href="https://developers.facebook.com/docs/apps/register" target="_blank">https://developers.facebook.com/docs/apps/register</a> for  detailed explanation. </p>
+	 
+	 <p>After you create an application,find your App Id and App Secret keys on your application's Dashboard. Those keys should be entered into facebook App Id and App Secret in config page of EUM </p>
+	 <br>
+	 
+	  <h4>Twitter</h4>
+	  <p>To use Twitter authentication go to Twitter <a href="https://apps.twitter.com/">Application Management</a> and click Create New App button at the top right corner. Then fill all required fields and click Create your Twitter Application button at the bottom of the page.
+	  Your Callback URL for twitter is</p>
+	 <p><code> http://YOUR_DOMAIN/index.php/login/endpoint?hauth.done=Twitter</code></p>
+	  After application is created, update the twitter Keys and Access Tokens in app config page
+	  
+	  <br>
+	  <h4>Google</h4>
+	  <p>For Google+ Authentication, </p>
+	 <ol class="social-list">
+	 <li>Go to the Google Developers Console  https://console.developers.google.com/projectselector/apis/library.</li>
+     <li>From the project drop-down create a new one by selecting Create a new project.</li>
+     <li>Enable the Google+ API service:
+        <ul><li>In the list of Google APIs, search for the Google+ API service.</li>
+        <li>Select Google+ API from the results list.</li>
+        <li>Press the Enable API button. Wait for the API to be enabled.</li></ul></li>
+	 
+
+    <li>In the sidebar under "API Manager", select Credentials, then select the OAuth consent screen tab.
+        Choose an Email Address, specify a Product Name, and press Save.</li>
+
+    <li>In the Credentials tab, select the New credentials drop-down list, and choose OAuth client ID.</li>
+
+    <li>Under Application type, select Web application. 
+    <p>The Authorized JavaScript origins is
+    <br><code> http://YOUR_DOMAIN</code></p>
+    <p>
+    The Authorized redirect URI field  is <br>  <code>http://YOUR_DOMAIN/index.php/login/endpoint?hauth.done=Google.</code></p>
+Press the Create button.
+From the resulting OAuth client dialog box, copy the Client ID and Client secret. .
+	 <br>
+	 <br>
+	 Please refer <a href="https://developers.google.com/+/web/samples/php" target="_blank">https://developers.google.com/+/web/samples/php</a> for detailed explanation.
+	 </li>
+	 
+	 When you have those keys, update the google Keys and Access Tokens in app config page.
+	 
+     <h2 id="application_structure">Application Structure</h2>
+	 This application is built up around the CodeIgniter framework. It's freely available on the internet with full documentation <a target="_blank" href="http://www.codeigniter.com/user_guide/" target="_blank">codeigniter.com/user_guide/</a> . Below is the quick overview of your application directory structure.
+	 
+	 <ul>
+	 <li>application</li>
+	 <p>
+	  This is where the custom application files are kept. It includes the configuration files, the class controllers, models and view files. If you want to make changes to the application, you should modify these files.
+	 </p>
+	 <ol>
+	 <li>Helper Functions </li>
+	 <p>Helpers, as the name suggests, help you with tasks. Each helper file is simply a collection of functions in a particular category. There are Table  Helpers, that assist in creating data tables, there are Report Helpers that help you create form reports</p>
+	 <li>Languages</li>
+	 <p>You can translate your product into another language by adding or editing the language files. These translations or additional messages would go inside your application/language/ directory, with separate sub-directories for each idiom (for instance, ‘french’ or ‘german’).</p>
+	 <li>Hooks </li>
+	 <p>CodeIgniter’s Hooks feature provides a means to tap into and modify the inner workings of the framework without hacking the core files.Hooks are defined in the application/hooks directory.</p>	
+	 <li>Libraries </li>
+	 <p>When we use the term “Libraries” we are normally referring to the classes that are located in the libraries directory .The encryption class file  "Bcrypt" located in library directory of your application.</p>
+	 <li>Config </li>
+	 <p>CodeIgniter has a config file that lets you store your database connection values (username, password, database name, etc.). The config file is located at application/config/database.php. You can also set database connection values for specific environments by placing database.php in the respective environment config folder.</p>
+	 
+	 <li>Module</li>
+	 <p>Using the folder modules, we can create different modules inside.Each modules directories contain mini MVC directories</p>
+	 
+	 <ul>
+	 <li>Model</li>
+	 <p>The Model represents your data structures. Your model classes will contain functions that help you retrieve, insert, and update information in your database.</p>
+	  <li>View </li>
+	 <p>The View is the information that is being presented to a user. A View will normally be a web page, but in CodeIgniter, a view can also be a page fragment like a header or footer. It can also be an RSS page, or any other type of “page”.</p> 
+	 <li>Controller </li>
+	 <p>The Controller serves as an intermediary between the Model, the View, and any other resources needed to process the HTTP request and generate a web page.</p> 
+	 </ul>
+	 </ol>
+	 <li>assets</li>
+	 <p>This folder contain all css,js,images used in the application.</p>
+	   <ol>
+	   <li>Adminlte</li>
+	     <p> Adminlte theme files used in the application are stored here.</p>
+	   <li>Bootstrap</li>
+	      <p>Contain all bootstrap files.</p>
+	   <li>font-awesome</li>
+	       <p>Font-awesome files.</p>
+	   <li>CSS</li>
+	      <p> CSS files for the application.</p>
+	   <li>Images</li>
+	      <p> All images
+	   <li>Js</li>
+	      <p> Javascript files for the application.</p>
+	   </ol>
+	 <li>Captcha</li> 
+	   <p>Captcha directory is used for storing temporary captcha images.</p>
+	 <li>Install</li>
+	     This directory contain the installation files.You can delete this directory after completing installation.
+	 <li>System</li>
+	     System directory contain codeigniter framework files
+	 <li>.htaccess</li>
+	  <p>The ENVIRONMENT Constant is set on .htaccess file in the root directory.</p>
+	 <li>index.php</li>
+	 <p>The index.php serves as the front controller, initializing the base resources needed to run CodeIgniter.
+	 </p>
+	 </ol>
+     </ul>
+	 
+	 
+ <h2 id="Customisation">Customisation</h2> 
+
+<h5>Renaming Folders</h5>
+<p>
+ In codeigniter you can rename or move the SYSTEM or APPLICATION folders.After moving them, open the main index.php file and set the $system_path, $application_folder and $view_folder variables, preferably with a full path, e.g. ‘/www/MyUser/system‘.</p>
+ 
+ <code>$system_path = 'system'; </code><br>
+ <code>$application_folder = 'application'; </code><br>
+ <code>$view_folder = ''; </code><br>
+ 
+ 
+<h5>The ENVIRONMENT Constant</h5>
+<p>
+ This can be set to development, test or  production.
+Setting the ENVIRONMENT constant to a value of ‘development’ will cause all PHP errors to be rendered to the browser when they occur. Conversely, setting the constant to ‘production’ will disable all error output. Disabling error reporting in production is a good security practice.
+</p>
+<p>
+By default, development mode  is set to production.This can be changed, by changing the .htaccess file in the root directory.
+</p>
+Change <code>SetEnv CI_ENV production</code> to <code>SetEnv CI_ENV development</code> in  .htaccess file for development purposes.
+ 
+
+ 
+ 
+     <h2 id="security">Security</h2>
+ <ul>
+ <li><h4>XSS Filtering</h4></li>
+ This filter looks for commonly used techniques to embed malicious JavaScript into your data, or other types of code that attempt to hijack cookies or do other malicious things. In your application XSS filtering applied to browser outputs.
+ <li><h4>CSRF protection</h4></li>
+ CSRF stands for Cross-Site Request Forgery, which is the process of an attacker tricking their victim into unknowingly submitting a request.CSRF is enables and all forms include CSRF token
+ <li><h4>Password handling</h4></li>
+ Bcrypt Library is used for password encryption.Bcrypt has become an imporant standard in password hashing as it's become clear that MD5 and SHA1 do not do enough to protect sensitive content.This library is a simple adaption of the portable PHPPass library for hashing passwords that better matches the CodeIgniter API and fits in easily as a library.
+
+ <li><h4>Validate input data</h4></li>
+ CodeIgniter Form Validation Library using for validating, filtering, and prepping all input data.
+ <li><h4>Escape all data</h4></li>
+  All database queries are done wtith Query Builder class.This pattern allows information to be retrieved, inserted, and updated in your database with minimal scripting.It also allows for safer queries, since the values are escaped automatically by the system.
+ </ul>
+ 
+ 
+<h2 id="credits">Credits</h2>
+ <ol>
+ <li><a href="https://www.codeigniter.com" target="_blank">CodeIgniter</a></li>
+ <li><a href="https://almsaeedstudio.com" target="_blank">AdminLTE</a></li>
+ <li><a href="http://materializecss.com" target="_blank">Materializecss</a></li>
+ <li><a href="http://getbootstrap.com" target="_blank"> Bootstrap</a></li>
+ <li><a href="https://jquery.com" target="_blank"> jQuery</a></li>
+ <li><a href="http://codylindley.com/thickbox/" target="_blank"> Thickbox</a></li>
+ <li><a href="http://tablesorter.com/" target="_blank">Tablesorter</a></li>
+ <li><a href="https://github.com/jzaefferer/jquery-validation" target="_blank">Jquery-validation</a></li>
+ <li><a href="http://areaaperta.com/nicescroll" target="_blank"> Nicescroll</a></li>
+ <li><a href="https://github.com/hybridauth/hybridauth" target="_blank"> HybridAuthLib</a></li>
+ </ol>
+ <br>
+ <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function () {
+  $('#wrapper').toggleClass('toggled');
+     
+  var trigger = $('.hamburger'),
+    
+     isClosed = false;
+	 hamburger_cross();  
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+  
+  
+
+ $("#myDropdown ul li").on("click",  function(e) { 
+ 
+ e.stopPropagation();
+         $('#myDropdown').on('hide.bs.dropdown', function () { 
+    return true;
+});
+  
+    });
+	
+ $("ul.nav.sidebar-nav > li.main-menu").on("click",  function(e) { 
+ e.startPropagation();
+    });
+
+});
+</script>
+</body>
+</html>
